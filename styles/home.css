@@ -1,32 +1,10 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Asar', serif;
-    font-family: 'Castoro Titling', cursive;
-    font-family: 'Roboto Mono', monospace;
-}
 
 body{
     background-color: rgb(78, 78, 78);
-    background-image: url(../images/mountain.jpg);
+    background-image: url(../images/bg-whiteblack.jpg);
+    background-position: bottom;
     background-size: cover;
-}
-
-:root{
-    --color-bg: #0C0C0C;
-    --color-bg-2: #0c0c0cc4;
-    --color-bg-3: #010418;
-    --color-text: #c4c4c4;
-    --color-hover: rgba(0, 0, 0, 0.26);
-}
-
-.dark-theme{
-    --color-bg: #DCCCA3;
-    --color-bg-2: #F5E0B7;
-    --color-bg-3: #DCCCA3;
-    --color-text: #050508; 
-    --color-hover: #969379;
 }
 
 /*---------------header content-------------------*/
@@ -107,8 +85,7 @@ nav ul li:hover{
 main{
     background-color: rgba(0, 0, 0, 0.267);
     padding: 3%;
-    /*height: auto;*/
-    height: 1500px;
+    height: 1300px;
 }
 
 /*---grid-1---*/
@@ -197,6 +174,16 @@ main{
 #grid-1-item:hover{
     transform: translatey(0.2rem);
     cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    height: 60px;
+
 }
 
 
