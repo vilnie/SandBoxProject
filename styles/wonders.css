@@ -1,0 +1,88 @@
+
+
+
+
+.blank-1{
+    margin-top: 100px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #0c0c0cc4;;
+    color: var(--color-text);
+}
+
+
+/*----------aside-------------*/
+
+aside{
+    display: flex;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    padding: 5px;
+}
+
+.btn-group-aside{
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+}
+
+#btn-aside{
+    width: 250px;
+    height: 40px;
+    padding-left: 80px;
+    padding-right: 10px;
+    border: none;
+    border-radius: 40px;
+    margin-top: 7px;
+    text-align: center;
+    background-color: #00000083;
+    color: var(--color-text);
+    cursor: pointer;
+    transition: transform 500ms;
+}
+
+#btn-aside:hover{
+    background-color: var(--color-hover);
+    transform: translateX(1rem);
+}
+
+
+.btn-aside-1{
+    position: relative;
+    margin-left: -12px;
+}
+
+.btn-aside-2{
+    position: relative;
+    margin-left: -18px;
+}
+
+.btn-aside-3{
+    position: relative;
+    margin-left: -24px;
+}
+
+.btn-aside-4{
+    position: relative;
+    margin-left: -30px;
+}
+
+.btn-aside-5{
+    position: relative;
+    margin-left: -36px;
+}
+
+.btn-aside-6{
+    position: relative;
+    margin-left: -42px;
+}
+
+.btn-aside-7{
+    position: relative;
+    margin-left: -48px;
+}
+
