@@ -2,7 +2,7 @@
 
 body{
     background-color: rgb(78, 78, 78);
-    background-image: url(../images/bg-whiteblack.jpg);
+    background-image: url(../images/background_image_for_websit_x2.jpg);
     background-position: bottom;
     background-size: cover;
 }
@@ -24,9 +24,8 @@ header{
 }
 
 .img-logo{
-    width: 50px;
+    width: 60px;
     height: auto; 
-    margin-left: 50px;
 }
 
 .img-theme{
@@ -85,12 +84,12 @@ nav ul li:hover{
 main{
     background-color: rgba(0, 0, 0, 0.267);
     padding: 3%;
-    height: 1300px;
+    height: fit-content;
 }
 
 /*---grid-1---*/
 .grid-container-1{
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 20%;
     margin-right: 20%;
     display: grid;
@@ -152,7 +151,8 @@ main{
 
 /*---grid-2---*/
 .grid-container-2{
-    margin-top: 100px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     margin-left: 20%;
     margin-right: 20%;
     display: grid;
@@ -163,11 +163,21 @@ main{
 
 .grid-2-item-1{
     background-color: var(--color-bg);
+    color: var(--color-text);
     box-shadow: -7px -7px 30px rgba(0, 0, 0, 0.562);
     padding: 20px;
     border-radius: 20px;
-    grid-column: 1/4;
-    grid-row: 4;
+    height: 50px;
+    overflow: visible;
+    grid-row: 1;
+}
+
+.grid-2-item-2{
+    background-color: var(--color-bg);
+    box-shadow: -7px -7px 30px rgba(0, 0, 0, 0.562);
+    padding: 20px;
+    border-radius: 20px;
+    grid-row: 2;
     transition: transform 1s;
 }
 

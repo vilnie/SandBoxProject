@@ -4,7 +4,7 @@
 	<title>SandBoxSite</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/x-icon" href="images/temple.png">
+        <link rel="icon" type="image/x-icon" href="images/listverse-logo.png">
 		<link rel="stylesheet" href="styles/home.css">
         <link rel="stylesheet" href="styles/themes.css">
 </head>
@@ -12,21 +12,22 @@
 <body>
   <header>
 		<div class="container-nav">
-			<img class="img-logo" src="images/temple.png" alt="Logo">
+			<img class="img-logo" src="images/listverse-website.png" alt="Logo">
 			<nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="wonders.html">Wonders</a></li>
+                    <li><a href="wonders.html">Seven Wonders</a></li>
                     <li><a href="planets.html">Planets</a></li>
                     <li><a href="continents.html">Continents</a></li>
                     <li><a href="about.html">About</a></li>
                 </ul>   
             </nav>
-            <button id="themeButton" class="btn-nav-theme"><img class="img-theme" src="images/darkmode.png" alt="Theme"></button>
+            <button id="themeButton" class="btn-nav-theme"><img class="img-theme" src="images/defaultmode.png" alt="Theme"></button>
 		</div>
 	</header>
     
-	<main>
+	<main> 
+        
 		<div class="grid-container-1">
 			<div class="grid-1-item-1">	
                 <h1>Welcome!</h1><br>
@@ -50,13 +51,18 @@
             </div>
         </div>	
 
-        <div class="grid-container-2">
+
+        <div class="grid-container-2">  
             <div class="grid-2-item-1">
+                <span><b>Random quote: </b></span>
+                <span id="quote-text">Loading...</span>
+            </div>
+            <div class="grid-2-item-2">
                 <h2>Start Your Journey now...</h2><br>	
                 <p>Our mission is to bring knowledge and inspiration to your fingertips. Whether you're an adventurer, a student, or simply a curious
                 soul, our website offers a tapestry of information, encouraging you to embark on your own journey of discovery. We are your companion 
                 in unraveling the wonders of our world and universe. Enjoy the exploration, and may this site kindle your curiosity and spark your 
-                sense of wonder.</p>
+                sense of wonder.</p><br>
             </div>
 		</div>	
 	</main>
@@ -64,5 +70,5 @@
 	<footer>
         Link to GitHub: <a href="//github.com/vilnie/SandBoxProject">SandBoxProject</a>
 	</footer>
-	<script src="scripts/script.js"></script>
+	<script src="scripts/app.js"></script>
 </body>
