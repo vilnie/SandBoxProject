@@ -29,7 +29,7 @@ main{
     margin-right: 20%;
     display: grid;
     gap: 30px 60px;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit, 1fr);
     color: var(--color-text);
 }
 
@@ -67,7 +67,6 @@ main{
     background-image: url(../images/planet__earth.jpg);
     box-shadow: -7px -7px 30px rgba(0, 0, 0, 0.562);
     background-position: center;
-    max-height: 430px; 
     padding: 30px;
     border-radius: 20px;
     grid-column: 3/4;
@@ -92,7 +91,6 @@ main{
     box-shadow: -7px -7px 30px rgba(0, 0, 0, 0.562);
     padding: 30px;
     border-radius: 20px;
-    height: 110px;
     overflow: hidden;
     grid-column: 3/4;
     grid-row: 3/4;
@@ -106,7 +104,7 @@ main{
     margin-right: 20%;
     display: grid;
     gap: 50px 80px;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fit, 1fr);
     color: var(--color-text);
 }
 
@@ -125,21 +123,16 @@ main{
 }
 
 
-@media only screen and (min-width: 600px) {
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
+
+/*---Media queries for responsiveness---*/
+/*
+@media (max-width: 700px) {
+    .grid-container-1 {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    
+}*/
+
 
 
 @keyframes rotateAnimation {
