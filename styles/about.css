@@ -1,6 +1,4 @@
 
-
-
 body{
     display: flex;
     flex-direction: column;
@@ -19,9 +17,7 @@ header{
     background-color: var(--color-2);
 }
 
-
 /*-----------main------------*/
-
 main{
     background-color: var(--color-2);
     padding: 3%;
@@ -49,13 +45,3 @@ section{
 .info-box a{
     color: var(--color-text);
 }
-
-
-@keyframes rotateAnimation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(30deg);
-    }
-  }

@@ -1,5 +1,4 @@
 
-
 body{
     background-color: rgb(78, 78, 78);
     background-image: url(../images/background_image_for_websit_x2.jpg);
@@ -14,22 +13,19 @@ header{
     background-color: var(--color-3);
 }
 
-/*-----------main--------------*/
-
 main{
     background-color: var(--color-3);
     padding: 3%;
     height: fit-content;
 }
 
-/*---grid-1---*/
+/*--------grid-1-------*/
 .grid-container-1{
     margin-top: 50px;
     margin-left: 20%;
     margin-right: 20%;
     display: grid;
     gap: 30px 60px;
-    /*grid-template-columns: repeat(auto-fit, 1fr);*/
     color: var(--color-text);
 }
 
@@ -96,7 +92,7 @@ main{
     grid-row: 3/4;
 }
 
-/*---grid-2---*/
+/*--------grid-2--------*/
 .grid-container-2{
     margin-top: 150px;
     margin-bottom: 150px;
@@ -123,53 +119,36 @@ main{
 }
 
 
-
-/*---Media queries for responsiveness---*/
-
-@media (max-width: 800px) {
+/*---responsiveness---*/
+@media (max-width: 1000px) {
     .grid-container-1 {
         grid-template-columns: auto; 
     }
 
     .grid-1-item-1{
         padding: 10px;
-        border-radius: 20px;
         grid-column: 1;
         grid-row: 1;
     }
     .grid-1-item-2{
         padding: 10px;
-        border-radius: 20px;
         grid-column: 1;
         grid-row: 2;
     }
     .grid-1-item-3{
         padding: 10px;
-        border-radius: 20px;
         grid-column: 1;
         grid-row: 4;
     }
     .grid-1-item-4{
         padding: 10px;
-        border-radius: 20px;
         grid-column: 1;
         grid-row: 3;
     }
     .grid-1-item-5{
         padding: 10px;
-        border-radius: 20px;
         grid-column: 1;
         grid-row: 5;
     }
+}
 
-
-
-
-@keyframes rotateAnimation {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(30deg);
-    }
-  }
