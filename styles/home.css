@@ -7,82 +7,17 @@ body{
     background-size: cover;
 }
 
-/*---------------header content-------------------*/
-
 header{
     position: sticky;
     top: 0;
     padding: none;
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color: var(--color-3);
 }
 
-.container-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.img-logo{
-    width: 60px;
-    height: auto; 
-}
-
-.img-theme{
-    width: 30px;
-    height: auto;
-}
-
-nav{
-    display: flex;
-    padding: 7px;
-}
-
-nav ul li{
-    list-style: none;
-    display: inline-block;
-    margin-left: 40px;
-    color: var(--color-text);
-    cursor: pointer;
-    transition: transform 500ms;
-}
-
-nav ul li a{
-    text-decoration: none;
-    background-color: #00000000;
-    color: var(--color-text);
-    font-size: 1.4em;
-}
-
-.btn-nav-theme{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 12px;
-    width: 40px;
-    height: 40px;
-    border: none;
-    border-radius: 60px; 
-    background-color: rgba(0, 0, 0, 0.527);
-    cursor: pointer;
-    
-}
-
-nav ul li:hover{
-    transform: translatey(0.2rem);
-    text-decoration: underline;
-}
-
-.btn-nav-theme:hover{
-    background-color: var(--color-hover);
-    transform: rotate(30deg);
-    animation: rotateAnimation 0.3s linear;
-}
-
-/*---------------main---------------*/
+/*-----------main--------------*/
 
 main{
-    background-color: rgba(0, 0, 0, 0.267);
+    background-color: var(--color-3);
     padding: 3%;
     height: fit-content;
 }
@@ -93,15 +28,21 @@ main{
     margin-left: 20%;
     margin-right: 20%;
     display: grid;
-    gap: 50px 80px;
+    gap: 30px 60px;
     grid-template-columns: auto auto auto auto;
     color: var(--color-text);
 }
 
+.text-background{
+    background-color: rgba(0, 0, 0, 0.425);
+    padding: 15px;
+    border-radius: 15px;
+}
+
 .grid-1-item-1{
-    background-color: var(--color-bg-2);
+    background-color: var(--color-2);
     box-shadow: -7px -7px 30px rgba(0, 0, 0, 0.562);
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
     grid-column: 1/3;
     grid-row: 1;
@@ -112,41 +53,49 @@ main{
 }
 
 .grid-1-item-2{
-    background-image: url(../images/pyramids-small.jpg);
+    background-image: url(../images/Temple_of_Artemis.png);
     box-shadow: -7px -7px 30px rgba(0, 0, 0, 0.562);
     background-position: center;
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
     grid-column: 1/3;
     grid-row: 2;
     transition: transform 1s;
 }
-/*
-.grid-1-item-2::before{
-    background-color: var(--color-bg-2);
-}*/
 
 .grid-1-item-3{
-    background-image: url(../images/planets-small.jpg);
+    background-image: url(../images/planet__earth.jpg);
     box-shadow: -7px -7px 30px rgba(0, 0, 0, 0.562);
     background-position: center;
-    padding: 20px;
+    max-height: 430px; 
+    padding: 30px;
     border-radius: 20px;
     grid-column: 3/4;
-    grid-row: 1/4;
+    grid-row: 1/3;
     transition: transform 1s;
 }
 
 .grid-1-item-4{
-    display: inline-block;
-    background-image: url(../images/uzbekistan.jpg);
+    background-image: url(../images/book_on_table_auto_x2.jpg);
     box-shadow: -7px -7px 30px rgba(0, 0, 0, 0.562);
-    background-position: right;
-    padding: 20px;
+    background-position: center;
+    padding: 30px;
     border-radius: 20px;
     grid-column: 1/3;
     grid-row: 3;
     transition: transform 1s;
+}
+
+.grid-1-item-5{
+    background-color: var(--color-1);
+    color: var(--color-text);
+    box-shadow: -7px -7px 30px rgba(0, 0, 0, 0.562);
+    padding: 30px;
+    border-radius: 20px;
+    height: 100px;
+    overflow: hidden;
+    grid-column: 3/4;
+    grid-row: 3/4;
 }
 
 /*---grid-2---*/
@@ -162,20 +111,9 @@ main{
 }
 
 .grid-2-item-1{
-    background-color: var(--color-bg);
-    color: var(--color-text);
+    background-color: var(--color-1);
     box-shadow: -7px -7px 30px rgba(0, 0, 0, 0.562);
-    padding: 20px;
-    border-radius: 20px;
-    height: 50px;
-    overflow: visible;
-    grid-row: 1;
-}
-
-.grid-2-item-2{
-    background-color: var(--color-bg);
-    box-shadow: -7px -7px 30px rgba(0, 0, 0, 0.562);
-    padding: 20px;
+    padding: 30px;
     border-radius: 20px;
     grid-row: 2;
     transition: transform 1s;
@@ -190,7 +128,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-bg);
+    background-color: var(--color-1);
     color: var(--color-text);
     height: 60px;
 
