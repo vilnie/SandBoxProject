@@ -103,5 +103,18 @@ aside{
     aside{
         display: none;
     }
+}
 
+@media (max-width: 1200px) {
+    section {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    section img{
+        height: auto;  
+        aspect-ratio: 1/1;
+    }
+    aside{
+        display: none;
+    }
 }

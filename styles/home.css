@@ -100,7 +100,6 @@ main{
     margin-right: 20%;
     display: grid;
     gap: 50px 80px;
-    grid-template-columns: repeat(auto-fit, 1fr);
     color: var(--color-text);
 }
 
@@ -127,10 +126,8 @@ main{
         margin-left: 7%;
         margin-right: 7%;
     }
-    
-
     .grid-1-item-1{
-        padding: 10px;
+        padding: 20px;
         grid-column: 1;
         grid-row: 1;
     }
@@ -151,6 +148,18 @@ main{
     }
     .grid-1-item-5{
         padding: 10px;
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .grid-container-2 {
+        grid-template-columns: auto; 
+        margin-top: 30px;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .grid-2-item-1{
+        padding: 20px;
         grid-column: 1;
         grid-row: 5;
     }
