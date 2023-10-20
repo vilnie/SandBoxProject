@@ -1,6 +1,4 @@
 
-
-
 body{
     background-color: rgb(78, 78, 78);
     background-image: url(../images/0_2_384_N_auto_x2.jpg);
@@ -51,15 +49,6 @@ section img{
 
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-1);
-    color: var(--color-text);
-    height: 60px;
-}
-
 /*----------aside-------------*/
 
 aside{
@@ -79,7 +68,7 @@ aside{
     width: min-content;
 }
 
-#btn-aside{
+.btn-aside{
     width: 235px;
     height: 45px;
     padding-left: 10px;
@@ -95,7 +84,7 @@ aside{
     transition: transform 500ms;
 }
 
-#btn-aside:hover{
+.btn-aside:hover{
     background-color: var(--color-hover);
     transform: translateX(1rem);
 }

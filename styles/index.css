@@ -7,20 +7,26 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --color-1: #0C0C0C;
     --color-2: rgba(0, 0, 0, 0.692);
     --color-3: rgba(0, 0, 0, 0.192);
     --color-text: #e7e7e7;
     --color-hover: rgba(0, 0, 0, 0.486);
+    --color-text-box: rgba(0, 0, 0, 0.349);
 }
 
 .dark-theme{
-    --color-1: #310e0e;
-    --color-2: #3f12127a;
-    --color-3: rgba(0, 0, 0, 0.192);
-    --color-text: #e7e7e7;
-    --color-hover: rgba(0, 0, 0, 0.486);
+    --color-1: #adadad;
+    --color-2: rgba(201, 201, 201, 0.692);
+    --color-3: rgba(167, 167, 167, 0.192);
+    --color-text: #000000;
+    --color-hover: rgba(107, 107, 107, 0.486);
+    --color-text-box: rgba(212, 212, 212, 0.308);
 }
 
 .section-hidden{
@@ -96,4 +102,17 @@ nav ul li:hover{
     background-color: var(--color-hover);
     transform: rotate(30deg);
     animation: rotateAnimation 0.3s linear;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-1);
+    color: var(--color-text);
+    height: 60px;
+}
+
+footer a{
+    color: var(--color-text);
 }

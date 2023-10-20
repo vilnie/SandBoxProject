@@ -46,18 +46,8 @@ section{
     padding: 20px;
 }
 
-.info-text a{
+.info-box a{
     color: var(--color-text);
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-1);
-    color: var(--color-text);
-    height: 60px;
-    
 }
 
 
