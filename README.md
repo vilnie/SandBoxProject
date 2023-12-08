@@ -1,7 +1,6 @@
 # SandBoxWebsiteProject
 
 https://vilnie.github.io/SandBoxWebsiteProject/
-# Arvioijalle:
 
 
 
